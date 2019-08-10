@@ -1,0 +1,5 @@
+@include('partials.head')
+@include('partials.headeradmin')
+@yield('content')
+@include('partials.footer')
+@include('partials.jquerys')

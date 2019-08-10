@@ -1,0 +1,993 @@
+/*GENERAL*/
+* {
+  box-sizing: border-box;
+}
+
+p{
+  margin-bottom: 3px;
+}
+/*HEADER*/
+.navbar-dark .navbar-nav .nav-link{
+ color: white;
+}
+
+li.nav-item a.login{
+  border: 3px solid white;
+}
+
+li.nav-item a.login:hover{
+  color: rgb(87, 197, 164) !important;
+  background-color: white;
+}
+
+.navbar-collapse{
+  background-color: rgb(87, 197, 164) !important;
+  z-index: 9999;
+}
+
+.header{
+  height: 10vh;
+  background-color: rgb(87, 197, 164);
+  align-items: center;
+  vertical-align: middle;
+
+}
+.header-navbar{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: transparent;
+  display: flex;
+  color: white;
+}
+
+
+.navbar-brand{
+  font-size: 20px;
+  padding-top: 10px;
+  color: white !important;
+  font-weight: bold;
+  pointer-events:none;
+}
+.img-header-logo{
+  margin-right: 10px;
+}
+
+.nav-link{
+  font-size: 17px;
+  text-align: center;
+  /*border-width: thin;
+  border-color: black;
+  color: white;*/
+  margin-left: 20px;
+
+}
+
+.nav-link:hover{
+  color: white;
+  border-bottom: solid;
+  border-color: white;
+  border-width: 3px;
+  text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link .login {
+  background-color: white;
+  color:rgb(87, 197, 164);
+  font-weight: bold;
+  border: 3px solid white;
+  border-width: 3px;
+}
+
+.navbar-dark .navbar-nav .nav-link .login:hover{
+  background-color: rgb(87, 197, 164);
+  border: solid;
+  border-color: white;
+  border-width: 3px;
+  color: white;
+}
+.active{
+  border-bottom: solid;
+  border-color: white;
+  border-width: 3px;
+  color: white;
+}
+
+/*HOME - Banner*/
+.img-fondo{
+  width: 100vw;
+}
+
+.banner-sub{
+  width: 100%;
+  align-items: center;
+  display: inline-block;
+  margin: 0;
+}
+.subtitulo-banner{
+  width: 100%;
+  align-items: center;
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  align-content: center;
+  text-align: center;
+  font-family: courier-std, monospace;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+.botones-sing{
+  list-style: none;
+  width: 100%;
+  align-items: center;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  list-style: none;
+  margin: 0;
+}
+.botones-sing ul{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.botones-sing ul li {
+  list-style: none;
+  text-align: center;
+}
+.ingresar-home {
+  color: white;
+  background-color: rgb(87, 197, 164);
+  font-size: 1em;
+  padding: 3px;
+  display: inline-block;
+  border-style: solid;
+  border-color: rgb(87, 197, 164);
+  border-width: 3px;
+  font-family: courier-std, monospace;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+.ingresar-home:hover{
+  border-style: solid;
+  border-color: rgb(87, 197, 164);
+  border-width: 3px;
+  color: rgb(87, 197, 164);
+  background-color:white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*HOME - Nosotros*/
+.HomeNosotros {
+  overflow: hidden;
+}
+
+.img-escritor {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  float: right;
+  width: 50%;
+  display: none;
+}
+
+.HomeReglas {
+  overflow: hidden;
+}
+.homeNosotros-escrito-nosotros{
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 0px;
+  float: left;
+  border-bottom: solid;
+  border-width: 3px;
+  border-color: rgba(87, 197, 164,0.6);
+}
+.img-dosescriben {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  float: left;
+  width: 50%;
+  display: none;
+}
+
+.homeNosotros-escrito-reglas{
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 0px;
+  float: right;
+
+}
+
+.home-title {
+  color: rgb(87, 197, 164);
+  font-family: courier-std, monospace;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3em;
+}
+
+.home-subtitle {
+  color: grey;
+  font-family: courier-std, monospace;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5em;
+    display: block;
+    text-align: justify;
+}
+
+.home-botoninfo{
+  list-style: none;
+  width: 100%;
+  align-items: left;
+  display: block;
+  list-style: none;
+  margin: 0;
+}
+
+.home-botoninfo ul{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.home-botoninfo ul li {
+  list-style: none;
+  text-align: left;
+}
+
+.home-boton {
+  color: white;
+  background-color: rgb(87, 197, 164);
+  font-size: 1.5em;
+  padding: 10px;
+  display: inline-block;
+  border-style: solid;
+  border-color: rgb(87, 197, 164);
+  border-width: 3px;
+  font-family: courier-std, monospace;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+.home-boton:hover{
+  border-style: solid;
+  border-color: rgb(87, 197, 164);
+  border-width: 3px;
+  color: rgb(87, 197, 164);
+  background-color:white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*Nosotros*/
+
+.nosotros-body{
+  height: 100vh;
+}
+
+.nosotros-main{
+  width: 90%;
+  margin: auto;
+}
+.nosotros-h1{
+  color: rgb(87, 197, 164);
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.nosotros-h2{
+  color: rgb(87, 197, 164);
+  font-size: 1.75em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+/*reglas*/
+.pregsfreq{
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.pregsfreq article{
+  text-align: justify;
+}
+
+.pregsfreq h5 {
+  color: rgb(87, 197, 164);
+}
+
+.preguntasfrecuentes{
+  margin-top: 20vh;
+}
+
+.titulo-pregsfreq {
+  color: rgb(87, 197, 164);
+  text-align: center;
+}
+/*footer*/
+.footer-gnrl{
+  background-color: rgb(87, 197, 164);
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.nosotros-p{
+  text-align: justify;
+}
+.footer{
+  width: 80%;
+  margin:auto;
+  align-items: center;
+  align-content: center;
+}
+.footer-brand{
+  display: inline-block;
+  float: left;
+}
+
+.connect {
+  display: inline-block;
+  float: right;
+  padding-top: 12px;
+}
+i {
+  color: white;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+/*LOGIN*/
+
+.paginasignup{
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+
+}
+
+.quote{
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  border-bottom: solid;
+  border-top: solid;
+  border-color: rgb(87, 197, 164);
+  border-width: 4px;
+  color: rgb(87, 197, 164);
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-family:   'Gotham SSm A','Gotham SSm B','Gotham A','Gotham B','Open sans',sans-serif;
+  align-items: center;
+  vertical-align: middle;
+
+
+}
+
+.p-quote{
+  width: 90%;
+  margin: auto;
+
+}
+
+.main-signup{
+  width: 100%;
+  height: 90%;
+  margin-top: 50px;
+}
+
+.h5-log{
+  color:rgb(87,197,164);
+  padding-top:10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.h5-login{
+  color:rgb(87,197,164);
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.signup-form {
+  width: 80%;
+  margin: auto;
+  background-color: hsla(201, 15%, 18%, .15);
+  border-radius: 25px;
+}
+
+.signup-login{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.signup-login ul {
+  list-style: none;
+  padding:0px;
+  margin:0px;
+  overflow: hidden;
+
+}
+.signup-login ul li {
+  list-style: none;
+  float: left;
+  width: 50%;
+
+}
+.signup-login ul .signup-si {
+  border-right: solid;
+  border-width: 3px;
+  border-color:rgb(87,197,164);
+}
+
+.signup-login ul li a {
+  color: rgb(87,197,164);
+
+}
+
+.active-sign{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.pregunta-signup{
+  margin-top: 0px;
+  width: 100%;
+}
+
+.pregunta-signup label {
+  width: 40%;
+  text-align: left;
+  color: rgb(87,197,164);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Gotham SSm A','Gotham SSm B','Gotham A','Gotham B','Open sans',sans-serif;
+
+}
+
+.pregunta-signup input {
+  width: 60%;
+}
+
+
+.error-for{
+  width: 60%;
+  display: inline-block;
+  color: red;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+.pregun-regis{
+  width: 100%;
+  text-align: left;
+  color: rgb(87,197,164);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Gotham SSm A','Gotham SSm B','Gotham A','Gotham B','Open sans',sans-serif;
+  align-content: center;
+  text-align: center;
+
+}
+
+.pregunta-recor label {
+  width: 20%;
+  text-align: left;
+  color: rgb(87,197,164);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Gotham SSm A','Gotham SSm B','Gotham A','Gotham B','Open sans',sans-serif;
+  box-sizing: border-box;
+
+}
+
+.recordarme{
+  width: 40%;
+  float:right;
+}
+
+
+.registrarse{
+  text-align: center;
+  color: rgb(87,197,164);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Gotham SSm A','Gotham SSm B','Gotham A','Gotham B','Open sans',sans-serif;
+  margin-top: 10px;
+  padding: 10px;
+  padding-bottom: 10px;
+
+}
+
+/*LISTAS*/
+.listados{
+  width: 100%;
+  margin: auto;
+ color: rgb(87,197,164);
+}
+
+.listados tbody td a{
+   color: rgb(87,197,164);
+}
+
+.listados td a:hover{
+  decoration:none;
+}
+ .listados i {
+     color: rgb(87,197,164);
+ }
+.listatitulo{
+  text-align: center;
+  color: rgb(87,197,164);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Gotham SSm A','Gotham SSm B','Gotham A','Gotham B','Open sans',sans-serif;
+  padding: 10px;
+  margin-top: 20PX;
+  margin-bottom: 20px;
+  letter-spacing: 3PX;
+}
+
+.middle{
+  margin:auto;
+  align-content:center;
+
+}
+
+.title-me {
+ color: rgb(87, 197, 164);
+ font-family: courier-std, monospace;
+ font-weight: 400;
+ font-style: italic;
+ font-size: 2em;
+}
+.likes-me i  {
+   color: rgb(87,197,164);
+   font-size: 15px;
+   margin-left: 0;
+}
+.likes-me {
+ text-align: right;
+ font-size: 15px;
+ color: rgb(87,197,164);
+}
+.fondo-escrito {
+ background-color: rgba(87,197,164, 0.2);
+}
+
+@media (min-width:768px){
+
+/*HEADER*/
+.header{
+height: 10vh;
+}
+
+.header-navbar{
+width: 80%;
+}
+
+.paginasignup{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-image: url("../ImagenesDH/fondo.jpeg") !important;;
+  background-size: cover;
+}
+
+/*LOGIN*/
+
+.quote{
+  width: 50%;
+  margin-top: 10vh;
+  height: 90%;
+  padding-top: 10vh;
+  float: left;
+  border-right: solid;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-color: rgb(87, 197, 164);
+  border-width: 4px;
+  color: rgb(87, 197, 164);
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-family:   'Gotham SSm A','Gotham SSm B','Gotham A','Gotham B','Open sans',sans-serif;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.p-quote{
+  width: 60%;
+  margin-top:20vh;
+  padding: 20px;
+    background-color: hsla(201, 15%, 18%, .15);
+    border-radius: 25px;
+
+}
+
+.main-signup{
+  width: 50%;
+  height: 100%;
+  padding-top: 0vh;
+  margin-top: 12vh;
+  float: right;
+}
+.h5-log{
+  color:rgb(87,197,164);
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.signup-form {
+  width: 70%;
+  margin: auto;
+  background-color: hsla(201, 15%, 18%, .15);
+  border-radius: 25px;
+}
+
+.signup-login{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.signup-login ul {
+  list-style: none;
+  padding:0px;
+  margin:0px;
+  overflow: hidden;
+
+}
+.signup-login ul li {
+  list-style: none;
+  float: left;
+  width: 50%;
+
+}
+
+.signup-si {
+  border-right: solid;
+  border-width: 3px;
+  border-color:rgb(87,197,164);
+  text-align: right;
+  padding-right: 20px;
+}
+
+.signup-lo {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.active-sign{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.pregunta-signup{
+  margin-top: 5px;
+}
+.pregunta-signup label {
+  width: 60%;
+  text-align: left;
+  color: rgb(87,197,164);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Gotham SSm A','Gotham SSm B','Gotham A','Gotham B','Open sans',sans-serif;
+
+}
+.pregunta-signup input {
+  width: 60%;
+}
+.pregun-regis{
+  width: 100%;
+  text-align: left;
+  color: rgb(87,197,164);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Gotham SSm A','Gotham SSm B','Gotham A','Gotham B','Open sans',sans-serif;
+  align-content: center;
+  text-align: center;
+
+}
+
+.registrarse{
+  text-align: center;
+  color: rgb(87,197,164);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Gotham SSm A','Gotham SSm B','Gotham A','Gotham B','Open sans',sans-serif;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/*Home Banner*/
+.img-fondo{
+  width: 100vw;
+}
+
+.banner-sub{
+  width: 100%;
+  align-items: center;
+  display: inline-block;
+
+  margin: 0;
+}
+.subtitulo-banner{
+  width: 100%;
+  align-items: center;
+  display: inline-block;
+  font-size: 2em;
+  position: absolute;
+  top: 30%;
+  align-content: center;
+  text-align: center;
+}
+
+.botones-sing{
+  list-style: none;
+  width: 100%;
+  align-items: center;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  list-style: none;
+  margin: 0;
+}
+.botones-sing ul{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.botones-sing ul li {
+  list-style: none;
+  text-align: center;
+}
+
+
+.ingresar-home {
+  color: white;
+  width: 25%;
+  background-color: rgb(87, 197, 164);
+  font-size: 2em;
+  padding: 15px;
+  display: inline-block;
+  border-style: solid;
+  border-color: rgb(87, 197, 164);
+  border-width: 3px;
+}
+
+.ingresar-home:hover{
+  border-style: solid;
+  border-color: rgb(87, 197, 164);
+  border-width: 3px;
+  color: rgb(87, 197, 164);
+  background-color:white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*Nosotros*/
+
+.nosotros-main{
+  width: 80%;
+  margin: auto;
+}
+/*footer*/
+.footer-gnrl{
+  height: 10vh;
+}
+
+ /*LISTAS*/
+ .listados{
+   width: 80%;
+   margin: auto;
+  color: rgb(87,197,164);
+ }
+
+  .listados i {
+      color: rgb(87,197,164);
+  }
+ .listatitulo{
+   text-align: center;
+   color: rgb(87,197,164);
+   font-size: 40px;
+   font-weight: bold;
+   font-family: 'Gotham SSm A','Gotham SSm B','Gotham A','Gotham B','Open sans',sans-serif;
+   padding: 10px;
+   margin-top: 20PX;
+   margin-bottom: 20px;
+   letter-spacing: 3PX;
+ }
+
+
+@media (min-width:1200px) {
+
+/*HEADER*/
+/*home*/
+
+.HomeNosotros {
+  overflow: hidden;
+}
+
+.HomeReglas {
+  overflow: hidden;
+}
+.homeNosotros-escrito-nosotros{
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 0px;
+  float: left;
+  border-bottom: 0px;
+}
+
+.homeNosotros-escrito-reglas{
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 0px;
+  float: right;
+}
+
+.home-title {
+  color: rgb(87, 197, 164);
+  font-family: courier-std, monospace;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3em;
+}
+
+.home-subtitle {
+  color: grey;
+  font-family: courier-std, monospace;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5em;
+
+}
+
+.home-botoninfo{
+  list-style: none;
+  width: 100%;
+  align-items: left;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  list-style: none;
+  margin: 0;
+}
+
+.home-botoninfo ul{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.home-botoninfo ul li {
+  list-style: none;
+  text-align: left;
+}
+
+.home-boton {
+  color: white;
+  background-color: rgb(87, 197, 164);
+  font-size: 2em;
+  padding: 15px;
+  display: inline-block;
+  border-style: solid;
+  border-color: rgb(87, 197, 164);
+  border-width: 3px;
+  margin-top: 20px;
+}
+
+.home-boton:hover{
+  border-style: solid;
+  border-color: rgb(87, 197, 164);
+  border-width: 3px;
+  color: rgb(87, 197, 164);
+  background-color:white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/*home copy final*/
+
+.homeNosotros-escrito-reglas{
+  width: 50%;
+}
+.img-escritor {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  float: right;
+  width: 50%;
+  display: block;
+}
+.homeNosotros-escrito-nosotros{
+  width: 50%;
+  padding: 20px;
+  padding-bottom: 0px;
+  float: left;
+}
+.img-dosescriben {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  float: left;
+  width: 50%;
+  display: block;
+}
+
+
+
+.main-signup{
+  padding-top: 0;
+}
+}
+.EscritoInd{
+  width: 80%;
+
+  margin: auto;
+    margin-top: 7vh;
+}
+
+/*USUARIO INDIVIDUAL*/
+
+.UsuariosIndiv{
+  width: 80%;
+  margin: auto;
+  margin-top: 5vh;
+
+}
+.infousuario{
+  overflow: hidden;
+}
+.infousuario .photo{
+  float: left;
+  width:50%;
+}
+
+.infousuario .photo .fotousuario{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  width:150px;
+  margin: auto;
+
+}
+
+.UsuariosIndiv .infous{
+  overflow: hidden;
+}
+
+.UsuariosIndiv .info .labelus{
+  float: left;
+}
+
+.UsuariosIndiv .info .outputus{
+  float: right;
+}
+
+/*User*/
+.Condiciones{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 10px;
+  padding-bottom: 0px;
+  float: left;
+  border-bottom: solid;
+  border-width: 3px;
+  border-color: rgba(87, 197, 164,0.6);
+}
+
+/*DESKTOP*/
