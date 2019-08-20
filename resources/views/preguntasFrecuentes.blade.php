@@ -1,6 +1,12 @@
 @extends('layouts.main')
 @section('content')
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Preguntas Frecuentes</title>
+  <link rel="stylesheet" href="/public/css/master.css">
+</head>
 <?php $filename="Reglas" ?>
 <div class="pregsfreq">
 

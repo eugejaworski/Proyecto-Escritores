@@ -3,7 +3,7 @@
     <!-- LOGO -->
     <div class="navbar-div" href="#">
       <img src="ImagenesDH/logoescribir.png" width="50" height="50" class="d-inline-block align-top img-header-logo" alt="">
-    <a class="navbar-brand"  href="Home.php">Escribe Conmigo | <?=$_SESSION['name']?></a>
+    <a class="navbar-brand"  href="Home.php">Escribe Conmigo </a>
   </div>
 
 
@@ -17,14 +17,14 @@
         <!--HOME-->
 
         <li class="nav-item">
-          <a class="nav-link " href="NewsFeed.php">News Feed
+          <a class="nav-link " href="/NewsFeed">News Feed
             <span class="sr-only">(current) </span>
           </a>
         </li>
 
         <!--NOSOTROS-->
         <li class="nav-item ">
-          <a class="nav-link" href="Condiciones.php">Reglas</a>
+          <a class="nav-link" href="/Reglas">Reglas</a>
         </li>
 
         <!--Reglas--> <!--TODAVIA NO VA A NINGUN LADO-->

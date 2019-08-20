@@ -24,5 +24,14 @@ Route::get('/Nosotros', function () {
 });
 
 Route::get('/PreguntasFrecuentes', function () {
-    return view('PreguntasFrecuentes');
+    return view('preguntasFrecuentes');
 });
+Route::get('/NewsFeed','WrittingsController@newsfeed');
+
+Route::get('/Reglas', function () {
+    return view('Condiciones');
+  });
+
+  Route::get('/MisEscritos', function () {
+      return view('MisEscritos');
+    });
