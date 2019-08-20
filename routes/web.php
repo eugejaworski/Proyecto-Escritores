@@ -26,3 +26,7 @@ Route::get('/Nosotros', function () {
 Route::get('/PreguntasFrecuentes', function () {
     return view('PreguntasFrecuentes');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

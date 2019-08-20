@@ -3,7 +3,7 @@
     <!-- LOGO -->
     <div class="navbar-div" href="#">
       <img src="ImagenesDH/logoescribir.png" width="50" height="50" class="d-inline-block align-top img-header-logo" alt="">
-    <a class="navbar-brand"  href="Home.php">Escribe Conmigo | <?=$_SESSION['name']?></a>
+    <a class="navbar-brand"  href="Home.php">Escribe Conmigo </a>
   </div>
 
 
