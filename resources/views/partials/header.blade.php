@@ -57,7 +57,7 @@
        <li class="nav-item">
          <a class="nav-link login <?php if ($filename=="login" && $filename=="signup" ) {
              echo 'active';
-         } ?>" href="signup.php">Ingresar</a>
+         } ?>" href="register">Ingresar</a>
        </li>
       </ul>
       <span class="navbar-text"> </span>

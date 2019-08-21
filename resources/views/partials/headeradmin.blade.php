@@ -3,7 +3,7 @@
     <!-- LOGO -->
     <div class="navbar-div" href="#">
       <img src="ImagenesDH/logoescribir.png" width="50" height="50" class="d-inline-block align-top img-header-logo" alt="">
-    <a class="navbar-brand"  href="Home.php">Escribe Conmigo | <?=$_SESSION['name']?></a>
+    <a class="navbar-brand"  href="Home.php">Escribe Conmigo </a>
   </div>
 
 
@@ -45,7 +45,11 @@
      -->
        <!--LOGIN SINGUP-->
        <li class="nav-item">
-         <a class="nav-link login" href="logout.php">Log out</a>
+
+         <a class="nav-link login" href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+                          document.getElementById('logout-form').submit();">
+         Log out</a>
        </li>
       </ul>
       <span class="navbar-text"> </span>
