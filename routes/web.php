@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/EscribeConmigo', function () {
@@ -39,3 +39,5 @@ Route::get('/Reglas', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('logout', 'Auth\LoginController@logout');

@@ -45,7 +45,11 @@
      -->
        <!--LOGIN SINGUP-->
        <li class="nav-item">
-         <a class="nav-link login" href="logout.php">Log out</a>
+
+         <a class="nav-link login" href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+                          document.getElementById('logout-form').submit();">
+         Log out</a>
        </li>
       </ul>
       <span class="navbar-text"> </span>
