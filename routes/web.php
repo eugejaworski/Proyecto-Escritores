@@ -27,6 +27,10 @@ Route::get('/PreguntasFrecuentes', function () {
     return view('preguntasFrecuentes');
 });
 Route::get('/NewsFeed','WrittingsController@newsfeed');
+//no se si esto está bien! o si falta agregarle una funcion entre corchetes que haga return view NewsFeed//
+
+Route::get('/Usuarios','UsersController@usuariosAdmin');
+//no se si esto está bien! o si falta agregarle una funcion entre corchetes que haga return view usuariosAdmin//
 
 Route::get('/Reglas', function () {
     return view('Condiciones');

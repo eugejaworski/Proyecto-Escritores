@@ -7,6 +7,10 @@ use App\users;
 
 class UsersController extends Controller
 {
-    $users= users::all();
-    dd($users);
+  public function usuariosAdmin(){
+    $listadoUsuarios = users::all();
+    return view('usuariosAdmin', compact('listadoUsuarios'));
+  }
 }
+
+  //not so sure about this :/ //
