@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Storage;
+
 
 class RegisterController extends Controller
 {
@@ -28,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/NewsFeed';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -51,7 +53,9 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'surname' => ['required', 'string', 'max:255'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'escritor' => 'file',
         ]);
     }
 
@@ -63,10 +67,24 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+      $path = $data['escritor'];
+
+
+      if (!is_null($path)) {
+          $filename = $path->store('public/escritores');
+          $dbFilename = explode('/',$filename);
+          $filename = 'storage/avatars/'.$dbFilename[2];
+      }
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'surname'=> $data['surname'],
+            'escritor' => $filename,
             'password' => Hash::make($data['password']),
         ]);
+    }
+    public function show()
+    {
+        return view('auth.register');
     }
 }

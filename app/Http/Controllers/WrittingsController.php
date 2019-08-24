@@ -11,9 +11,4 @@ class WrittingsController extends Controller
       $escritos = writting::all();
       return view('NewsFeed', compact('escritos'));
     }
-
-    public function newsfeed(){
-      $escritos = writting::all();
-      return view('NewsFeed', compact('escritos'));
-    }
 }
