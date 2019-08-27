@@ -1,19 +1,11 @@
-@extends('layouts.mainuser')
+@extends('layouts.mainadmin')
 
 @section('content')
 
- <?php
 
-$filename="Usuarios";
- /*
-  if(!isset($_SESSION["email"]) || $_SESSION['role']==1 ){
-    redirect("signup.php");
-  }
-  $listadoUsuarios = Query::listado($pdo,'users','where role=1');*/
- ?>
 
   <body>
-    <?php /*if ($_SESSION['role'] == 1 ):*/?>
+
 
     <div class="listados">
       <h2 class="listatitulo">ESCRITORES</h2>
@@ -30,28 +22,29 @@ $filename="Usuarios";
             </tr>
           </thead>
           <tbody>
-              <?php foreach ($listadoUsuarios as $key => $value):?>
+            @foreach ($listadoUsuarios as $key => $value)
+
                 <tr>
 
 
-                  <th scope="row"><?= $value["id"] ?></th>
-                  <td><?=$value["name"];?></td>
-                  <td><?=$value["surname"];?></td>
-                  <td><a href="mostrarUsuarioAdmin.php?id=<?=$value['id'];?>">
+                  <th scope="row"> {{$value->id}}</th>
+                  <td>{{$value->name}}</td>
+                  <td>{{$value->surname}}</td>
+                  <td><a href="mostrarUsuarioAdmin.php?id={{$value->id}}">
                         <i class="far fa-eye"></i>
                       </a>
                   </td>
-                  <td><a href="modificarUsuarioAdmin.php?id=<?=$value['id'];?>">
+                  <td><a href="modificarUsuarioAdmin.php?id={{$value->id}}">
                         <i class="far fa-edit"></i>
                       </a>
                   </td>
-                  <td><a href="eliminarUsuarioAdmin.php?id=<?=$value['id'];?>">
+                  <td><a href="eliminarUsuarioAdmin.php?id={{$value->id}}">
                         <i class="far fa-trash-alt"></i>
                       </a>
                   </td>
 
                 </tr>
-              <?php endforeach;?>
+              @endforeach
           </tbody>
       </div>
 

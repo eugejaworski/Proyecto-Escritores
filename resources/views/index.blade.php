@@ -13,7 +13,7 @@
     <div class="botones-sing">
       <ul>
         <li>
-          <a class="ingresar-home" href="login.php">Ingresá</a>
+          <a class="ingresar-home" href="/login">Ingresá</a>
         </li>
       </ul>
     </div>
@@ -34,7 +34,7 @@
 <div class="home-botoninfo">
 <ul>
   <li>
-    <a class="home-boton" href="Nosotros.php">Nosotros</a>
+    <a class="home-boton" href="/Nosotros">Nosotros</a>
   </li>
 </ul>
 </div>
@@ -55,7 +55,7 @@
 <div class="home-botoninfo">
   <ul>
     <li>
-      <a class="home-boton" href="Reglas.php">Preguntas frecuentes</a>
+      <a class="home-boton" href="/PreguntasFrecuentes">Preguntas frecuentes</a>
     </li>
   </ul>
 </div>
