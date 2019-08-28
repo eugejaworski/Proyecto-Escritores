@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header user">
   <nav class="navbar navbar-expand-lg header-navbar navbar-dark" style="background-color: rgb(87, 197, 164)";>
     <!-- LOGO -->
     <div class="navbar-div" href="/EscribeConmigo">

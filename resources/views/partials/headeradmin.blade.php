@@ -1,9 +1,9 @@
-<header class="header">
+<header class="header admin">
   <nav class="navbar navbar-expand-lg header-navbar navbar-dark" style="background-color: rgb(87, 197, 164)";>
     <!-- LOGO -->
     <div class="navbar-div" href="#">
       <img src="ImagenesDH/logoescribir.png" width="50" height="50" class="d-inline-block align-top img-header-logo" alt="">
-    <a class="navbar-brand"  href="Home.php">Escribe Conmigo </a>
+      <a class="navbar-brand"  href="/EscribeConmigo">Escribe Conmigo | {{ Auth::user()->name }} </a>
   </div>
 
 
@@ -46,9 +46,7 @@
        <!--LOGIN SINGUP-->
        <li class="nav-item">
 
-         <a class="nav-link login" href="{{ route('logout') }}"
-            onclick="event.preventDefault();
-                          document.getElementById('logout-form').submit();">
+         <a class="nav-link login" href="{{ route('logout') }}">
          Log out</a>
        </li>
       </ul>
