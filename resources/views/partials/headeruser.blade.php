@@ -29,7 +29,7 @@
 
         <!--Reglas--> <!--TODAVIA NO VA A NINGUN LADO-->
         <li class="nav-item">
-          <a class="nav-link" href="MisEscritos.php">Mis Escritos</a>
+          <a class="nav-link" href="/MisEscritos">Mis Escritos</a>
         </li>
 
         <!-- DROPDOWN QUE NO VAMOSA  USAR AHORA

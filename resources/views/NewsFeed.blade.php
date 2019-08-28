@@ -1,7 +1,7 @@
 
 @extends('layouts.mainuser')
 @section('content')
-
+{{Auth::user()->email}}
   @foreach ($escritos as $key => $value)
 
     <div class="EscritoInd">

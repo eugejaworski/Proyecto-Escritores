@@ -30,15 +30,14 @@ Route::get('/NewsFeed','WrittingsController@newsfeed');
 //no se si esto está bien! o si falta agregarle una funcion entre corchetes que haga return view NewsFeed//
 
 Route::get('/Usuarios','UsersController@usuariosAdmin');
+
+Route::get('/MisEscritos','WrittingsController@misEscritos');
 //no se si esto está bien! o si falta agregarle una funcion entre corchetes que haga return view usuariosAdmin//
 
 Route::get('/Reglas', function () {
     return view('Condiciones');
   });
 
-  Route::get('/MisEscritos', function () {
-      return view('MisEscritos');
-    });
 
 Auth::routes();
 
